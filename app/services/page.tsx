@@ -1,0 +1,2 @@
+import {ServiceGrid} from '@/components/Sections';
+export default function Services(){return <main><section className="section grad"><div className="container"><h1 className="textgrad text-6xl font-black">Services</h1><p className="muted mt-5 max-w-3xl text-xl">End-to-end IT, programming, cloud, cybersecurity and automation services for organizations that need reliable technology execution.</p></div></section><section className="section"><div className="container"><ServiceGrid/></div></section></main>}
