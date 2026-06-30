@@ -1,2 +1,0 @@
-import { ServiceCards } from '@/components/site';
-export default function Services(){return <main><section className="pageHero"><div className="container"><div className="eyebrow">Services</div><h1>Premium IT, programming, cloud, and AI services.</h1><p className="lead">Novaris delivers practical technology services for companies that need secure systems, reliable infrastructure, and modern digital products.</p></div></section><section className="section"><div className="container"><ServiceCards /></div></section></main>}
