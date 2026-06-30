@@ -1,5 +1,3 @@
-# Novaris Technology Real V1
-A production-ready company website for Novaris Technology. Built with Next.js and plain CSS to avoid Tailwind/TypeScript deployment issues.
+# Novaris Technology Premium Bilingual Website
 
-## Edit content
-Most website data lives in `content/site.js`.
+Vercel-ready Next.js website, JavaScript + CSS only. No Tailwind, no TypeScript, no package-lock.

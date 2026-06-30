@@ -1,23 +1,22 @@
-import { company, services, projects, training, values, faqs } from '../content/site';
+import { content } from '../content/site';
 
-function ServiceCard({ s }){return <article className="card"><span className="tag">{s.tag}</span><h3>{s.title}</h3><p>{s.desc}</p><div className="list">{s.points.map(p=><span className="chip" key={p}>{p}</span>)}</div></article>}
-function ProjectCard({ p }){return <article className="project"><div className="project-art"/><div className="project-body"><span className="tag">{p.category}</span><h3>{p.title}</h3><p>{p.desc}</p><div className="list">{p.tech.map(t=><span className="chip" key={t}>{t}</span>)}</div></div></article>}
-
-export default function Home(){return <main>
-  <section className="hero wrap">
-    <div>
-      <span className="eyebrow">AI • Cloud • Enterprise Engineering</span>
-      <h1>Engineering software systems that look premium and scale reliably.</h1>
-      <p className="lead">{company.summary}</p>
-      <div className="actions"><a className="btn" href="/services">Explore Services</a><a className="btn secondary" href="/projects">View Projects</a></div>
-    </div>
-    <div className="visual" aria-hidden="true"><div className="orb a"/><div className="orb b"/><div className="dashboard"><div className="dash-top"><div className="dots"><span/><span/><span/></div><div className="pill">Cloud Operations</div></div><div className="chart"/><div className="metrics"><div className="metric"><b>99.9%</b><p>Uptime target</p></div><div className="metric"><b>24/7</b><p>Monitoring</p></div><div className="metric"><b>AI</b><p>Automation</p></div></div><div className="terminal">$ deploy novaris-cloud<br/>✓ infrastructure validated<br/>✓ security policies applied<br/>✓ production release ready</div></div></div>
-  </section>
-  <section className="wrap"><div className="section-head"><h2>Services built for serious technology teams.</h2><p>Clear, practical, and scalable services for organizations that need reliable engineering and modern digital infrastructure.</p></div><div className="cards">{services.map(s=><ServiceCard s={s} key={s.title}/>)}</div></section>
-  <section className="wrap split"><div className="panel"><span className="tag">About Novaris</span><h2>Not just a website. A technology identity.</h2><p>{company.mission}</p><p>{company.vision}</p><a className="btn" href="/about">Read About Us</a></div><div className="values">{values.map(v=><div className="value" key={v}>{v}</div>)}</div></section>
-  <section className="wrap"><div className="section-head"><h2>Project showcases with realistic technical depth.</h2><p>These are structured concept and internal showcase projects that demonstrate the kind of systems Novaris can design and deliver.</p></div><div className="projects">{projects.slice(0,4).map(p=><ProjectCard p={p} key={p.title}/>)}</div></section>
-  <section className="wrap"><div className="section-head"><h2>Professional training tracks.</h2><p>Training areas for teams and individuals who want practical skills in programming, cloud, security, AI, and data.</p></div><div className="training-grid">{training.map(t=><article className="card" key={t.area}><span className="tag">Training</span><h3>{t.area}</h3><div className="list">{t.items.map(i=><span className="chip" key={i}>{i}</span>)}</div></article>)}</div></section>
-  <section className="wrap"><div className="section-head"><h2>Responsible cloud and IT use.</h2><p>Novaris presents legitimate business workloads: software development, testing, hosting, secure remote access, automation, monitoring, and backup.</p></div><div className="cards"><div className="card"><h3>No abuse</h3><p>No spam, no phishing, no unauthorized access, no harmful traffic, and no activity that violates provider policies.</p></div><div className="card"><h3>No crypto mining</h3><p>Cloud resources are intended for engineering, applications, testing, AI assistance, and secure business infrastructure.</p></div><div className="card"><h3>Budget control</h3><p>Infrastructure is planned with usage limits, monitoring, alerts, and right-sized resources to avoid waste and unexpected costs.</p></div></div></section>
-  <section className="wrap"><div className="section-head"><h2>Questions teams ask before starting.</h2><p>Short answers to common project and cloud engagement questions.</p></div><div className="faq">{faqs.map(([q,a])=><article className="card" key={q}><h3>{q}</h3><p>{a}</p></article>)}</div></section>
-  <section className="wrap contact"><div className="panel"><span className="tag">Start now</span><h2>Let’s build the next platform.</h2><p>Tell us what you want to build, migrate, automate, or secure. Novaris will help turn the idea into a clear technical roadmap.</p><p>{company.email}</p></div><form className="panel"><input className="input" placeholder="Your name"/><input className="input" placeholder="Email address"/><input className="input" placeholder="Project type"/><textarea className="input" placeholder="Tell us about your project"/><button className="btn" type="button">Send Request</button></form></section>
-</main>}
+function Shell({ lang='en' }) {
+  const t = content[lang];
+  const rtl = lang === 'ar';
+  return <main dir={rtl?'rtl':'ltr'} className={rtl?'rtl':''}>
+    <div className="noise"/><div className="aurora"/><div className="spotlight"/>
+    <nav className="nav glass"><a className="brand" href="#top"><span className="logo">N</span><span>Novaris<br/><small>Technology</small></span></a><div className="navlinks">{t.nav.map((n,i)=><a key={i} href={'#'+['services','solutions','projects','training','about','contact'][i]}>{n}</a>)}</div><a className="lang" href={lang==='en'?'/ar':'/'}>{lang==='en'?'العربية':'English'}</a></nav>
+    <section id="top" className="hero section"><div className="heroText"><p className="pill">{t.heroKicker}</p><h1>{t.heroTitle}</h1><p className="lead">{t.heroText}</p><div className="actions"><a href="#services" className="btn primary">{t.primary}</a><a href="#projects" className="btn ghost">{t.secondary}</a></div></div><Mockup /></section>
+    <section className="stats glass">{t.stats.map((s,i)=><div key={i}><b>{s[0]}</b><span>{s[1]}</span></div>)}</section>
+    <section id="about" className="section split"><div><p className="eyebrow">{rtl?'من نحن':'About Novaris'}</p><h2>{t.aboutTitle}</h2></div><p className="text">{t.aboutText}</p></section>
+    <Cards id="services" title={t.servicesTitle} eyebrow={rtl?'خدماتنا':'What we do'} items={t.services}/>
+    <section id="solutions" className="section"><p className="eyebrow">{rtl?'الحلول':'Solutions'}</p><h2>{t.solutionsTitle}</h2><div className="chips">{t.solutions.map(x=><span key={x}>{x}</span>)}</div></section>
+    <section id="projects" className="section"><p className="eyebrow">{rtl?'الأعمال':'Showcase'}</p><h2>{t.projectsTitle}</h2><div className="projects">{t.projects.map((p,i)=><article className="project glass" key={p[0]}><div><span className="num">0{i+1}</span><h3>{p[0]}</h3><p>{p[1]}</p><small>{p[2]}</small></div><div className="screen"><span/><span/><span/></div></article>)}</div></section>
+    <section id="training" className="section"><p className="eyebrow">{rtl?'التدريب':'Training'}</p><h2>{t.trainingTitle}</h2><div className="courses">{t.courses.map(c=><div className="course glass" key={c}>{c}<b>↗</b></div>)}</div></section>
+    <section id="contact" className="section cta glass"><h2>{t.contactTitle}</h2><p>{t.contactText}</p><a className="btn primary" href="mailto:hello@novaris.technology">{rtl?'ابدأ مشروعك':'Start a Project'}</a></section>
+    <footer><div className="brand"><span className="logo">N</span><span>Novaris Technology</span></div><p>© 2026 Novaris Technology. AI, Cloud & Enterprise Software.</p></footer>
+  </main>
+}
+function Mockup(){return <div className="mock"><div className="orbit"/><div className="dashboard glass"><div className="dashTop"><span/><span/><span/></div><h3>Novaris Operations Cloud</h3><div className="grid"><div><b>$98,764</b><small>Cloud Spend</small></div><div><b>99.99%</b><small>Uptime</small></div><div><b>86%</b><small>Automation</small></div><div><b>24</b><small>Active Apps</small></div></div><div className="chart"><i/><i/><i/><i/></div></div><div className="phone glass"><b>AI Monitor</b><span>Operational</span><div className="wave"/></div></div>}
+function Cards({id,title,eyebrow,items}){return <section id={id} className="section"><p className="eyebrow">{eyebrow}</p><h2>{title}</h2><div className="cards">{items.map((it,i)=><article className="card glass" key={it[0]}><div className="cube">{i+1}</div><h3>{it[0]}</h3><p>{it[1]}</p><a>Explore →</a></article>)}</div></section>}
+export default function Page(){return <Shell lang="en"/>}
