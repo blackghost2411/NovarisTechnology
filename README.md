@@ -1,2 +1,2 @@
-# Novaris Technology Ultimate
-Premium enterprise website inspired by Stripe/Vercel aesthetics. JavaScript + CSS only for stable Vercel deployment.
+# Novaris Technology Build V1
+Next.js stable project. No TypeScript, no Tailwind build complexity. Ready for Vercel.

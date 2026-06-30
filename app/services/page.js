@@ -1,2 +1,2 @@
-import { Shell, PageHero, ServicesPreview, CTA } from '../../components/Site'
-export default function Services(){return <Shell><PageHero title="Enterprise services engineered for scale." subtitle="AI, cloud, software, cybersecurity, DevOps, data platforms, and technical consulting for ambitious teams."/><ServicesPreview/><CTA/></Shell>}
+import {Shell, SectionTitle, ServiceCard, services, ContactBlock} from '@/components/Site'
+export default function Services(){return <Shell><main className="page"><SectionTitle eyebrow="Services" title="Full-stack technology services" text="From strategy to deployment, Novaris provides the technical foundation required for modern companies."/><div className="cards">{services.map(s=><ServiceCard key={s.title} s={s}/>)}</div><ContactBlock/></main></Shell>}

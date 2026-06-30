@@ -1,3 +1,2 @@
-import { Shell, PageHero } from '../../components/Site'
-import { projects } from '../../components/data'
-export default function Projects(){return <Shell><PageHero title="Projects and case studies." subtitle="A polished portfolio of enterprise-grade platform concepts and implementation patterns."/><section className="section"><div className="portfolio">{projects.map(p=><article className="case" key={p.title}><span>{p.tag}</span><h2>{p.title}</h2><p>{p.desc}</p><div className="chips">{p.stack.map(s=><em key={s}>{s}</em>)}</div><strong>{p.metric}</strong></article>)}</div></section></Shell>}
+import {Shell, SectionTitle, ProjectCard, projects, ContactBlock} from '@/components/Site'
+export default function Projects(){return <Shell><main className="page"><SectionTitle eyebrow="Projects" title="Enterprise project showcase" text="Representative project models across healthcare, AI, cloud, automation, fintech and public-sector digital services."/><div className="projects">{projects.map((p,i)=><ProjectCard key={p.title} p={p} i={i}/>)}</div><ContactBlock/></main></Shell>}

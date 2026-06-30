@@ -1,2 +1,2 @@
-import { Shell, PageHero, Training, CTA } from '../../components/Site'
-export default function TrainingPage(){return <Shell><PageHero title="Professional programming and cloud academy." subtitle="Hands-on courses for developers, IT professionals, cloud engineers, security analysts, and future AI builders."/><Training/><CTA/></Shell>}
+import {Shell, SectionTitle, courses, ContactBlock} from '@/components/Site'
+export default function Training(){return <Shell><main className="page"><SectionTitle eyebrow="Training" title="Professional programming and cloud courses" text="Training programs for students, freelancers, developers, and IT teams who want practical skills."/><div className="courseGrid big">{courses.map(c=><div key={c}>{c}</div>)}</div><ContactBlock/></main></Shell>}

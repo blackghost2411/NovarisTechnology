@@ -1,2 +1,2 @@
-import { Shell, PageHero } from '../../components/Site'
-export default function Page(){return <Shell><PageHero title="privacy" subtitle="Novaris Technology policy page."/><section className="section"><div className="legal"><p>This page is a placeholder for official legal content. Replace it with your final approved policy text before public business use.</p></div></section></Shell>}
+import {Shell} from '@/components/Site'
+export default function Privacy(){return <Shell><main className="page legal"><h1>Privacy Policy</h1><p>Novaris Technology respects privacy and handles contact requests, project information and business communications with confidentiality. Information submitted through this website is used only to respond to inquiries, prepare proposals and deliver requested services.</p></main></Shell>}
