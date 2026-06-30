@@ -1,2 +1,5 @@
-# Novaris Technology — Signature Edition
-A premium enterprise technology website built with Next.js and pure CSS.
+# Novaris Technology — Stripe-Level Premium
+
+Next.js website with cinematic dark UI, aurora mesh gradients, glassmorphism, glowing cards and enterprise sections.
+
+Upload to GitHub, deploy with Vercel.
