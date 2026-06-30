@@ -1,12 +1,22 @@
-export const services=[['AI Solutions','Intelligent assistants, automation workflows, RAG search, analytics and AI-enabled enterprise experiences.','✦'],['Enterprise Software','ERP, CRM, HR, finance, procurement and workflow platforms designed around business operations.','◈'],['Cloud Infrastructure','Secure cloud architecture, migration, monitoring, backups, Kubernetes and DevOps foundations.','☁'],['Cybersecurity','Identity, access controls, hardening, auditing, security monitoring and secure engineering practices.','◉'],['Web & Mobile Apps','Premium web platforms, dashboards, portals, e-commerce and mobile experiences for modern teams.','▣'],['Training Academy','Practical programming, AI, cloud, DevOps and cybersecurity learning paths for individuals and teams.','◎']]
-export const projects=[
-{slug:'enterprise-erp-suite',cat:'Enterprise Software',title:'Enterprise ERP Suite',desc:'A modular ERP platform for finance, HR, procurement, inventory, approvals and executive analytics.',tags:['ERP','Finance','HR','PostgreSQL']},
-{slug:'ai-customer-support-platform',cat:'AI Automation',title:'AI Customer Support Platform',desc:'An AI helpdesk that answers questions, routes tickets and summarizes customer conversations.',tags:['LLM','RAG','Python','Automation']},
-{slug:'hospital-management-system',cat:'Healthcare',title:'Hospital Management System',desc:'A healthcare platform for appointments, departments, billing, patient profiles and operational reports.',tags:['Healthcare','React','API','Security']},
-{slug:'banking-analytics-suite',cat:'FinTech',title:'Banking Analytics Suite',desc:'Executive banking dashboard for transactions, risk signals, customer insights and reporting.',tags:['BI','Data','Cloud','Security']},
-{slug:'smart-logistics-dashboard',cat:'Logistics',title:'Smart Logistics Dashboard',desc:'Fleet, warehouse and shipment visibility with KPI tracking, route intelligence and alerts.',tags:['Maps','Analytics','IoT','Cloud']},
-{slug:'learning-management-platform',cat:'Education',title:'Learning Management Platform',desc:'A training portal for courses, lessons, exams, certificates and student progress tracking.',tags:['LMS','Video','Exams','Reports']}
+export const services=[
+['AI & Automation','AI assistants, internal copilots, workflow automation and intelligent search built around real business processes.','✦'],
+['Enterprise Software','ERP, CRM, HR, finance, inventory, procurement and approval platforms with secure dashboards and role-based access.','◆'],
+['Cloud Infrastructure','Cloud architecture, Linux servers, backups, monitoring, CDN, security hardening and scalable deployment pipelines.','☁'],
+['Web & Mobile Apps','Premium websites, SaaS platforms, customer portals and mobile experiences with fast, responsive interfaces.','◈'],
+['DevOps & Security','CI/CD, Docker, observability, access control, secure releases, performance reviews and operational reliability.','⟡'],
+['Training Academy','Practical programming, cloud, AI, cybersecurity and DevOps programs for individuals and corporate teams.','▣']
 ]
-export const programs=['Full Stack Web Development','Python for Automation & Data','AI Engineering & Prompt Systems','React & Next.js Professional','Flutter Mobile Development','Cloud Computing Foundations','Azure / AWS Deployment','DevOps with Docker & CI/CD','Cybersecurity Fundamentals','Business Analytics & Power BI']
-export const arProjects=[
-['منصة ERP مؤسسية','نظام متكامل لإدارة المالية والموارد البشرية والمشتريات والمخزون والموافقات والتقارير التنفيذية.'],['منصة دعم عملاء بالذكاء الاصطناعي','مساعد ذكي للرد على العملاء وتوجيه التذاكر وتلخيص المحادثات وتخفيف ضغط فرق الدعم.'],['نظام إدارة مستشفيات','منصة لإدارة المواعيد والأقسام والفواتير وملفات المرضى والتقارير التشغيلية.'],['لوحة تحليلات مصرفية','منصة مؤشرات تنفيذية للمعاملات والمخاطر وسلوك العملاء والتقارير المالية.']]
+export const projects=[
+['Enterprise ERP Suite','A modular ERP platform for finance, HR, procurement, inventory, approvals and executive analytics.','Enterprise Software','ERP','Finance','HR','PostgreSQL','enterprise-erp'],
+['AI Customer Support Platform','An AI helpdesk that answers questions, routes tickets and summarizes customer conversations.','AI Automation','LLM','RAG','Python','Automation','ai-support'],
+['Hospital Management System','A healthcare platform for appointments, departments, billing, patient profiles and operational reports.','Healthcare','Healthcare','React','API','Security','hospital-system'],
+['Smart Logistics Dashboard','Fleet, warehouse and shipment visibility with KPI tracking, route intelligence and alerts.','Logistics','Maps','Analytics','IoT','Cloud','logistics-dashboard'],
+['Banking Analytics Suite','Executive banking dashboard for transactions, risk signals, customer insights and reporting.','FinTech','BI','Data','Cloud','Security','banking-analytics'],
+['Learning Management Platform','A training portal for courses, lessons, exams, certificates and student progress tracking.','Education','LMS','Video','Exams','Reports','lms']
+]
+export const courses=[
+['Full Stack Web Development','Frontend, backend, databases, authentication, APIs, deployment and real-world project delivery.','12 weeks','React, Next.js, Node.js, PostgreSQL'],
+['AI Engineering & Prompt Systems','Prompt engineering, AI agents, RAG workflows, vector databases and business automation use cases.','8 weeks','LLM, Python, APIs, Automation'],
+['Cloud & DevOps Professional','Linux, Docker, CI/CD, monitoring, cloud deployment and production operations.','10 weeks','Docker, GitHub, Nginx, Cloud'],
+['Cybersecurity Foundations','Network security, secure development, identity, access control and practical defense concepts.','6 weeks','Security, IAM, SOC, Web Security']
+]
