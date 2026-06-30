@@ -1,3 +1,2 @@
-# Novaris Technology Stripe-Level Master
-
-Stable Next.js 14 JavaScript app. No Tailwind. No TypeScript. Premium Stripe-inspired UI.
+# Novaris Technology Ultimate
+Premium enterprise website inspired by Stripe/Vercel aesthetics. JavaScript + CSS only for stable Vercel deployment.
