@@ -3,4 +3,5 @@ node_modules
 out
 .env*.local
 .vercel
+.DS_Store
 package-lock.json

@@ -1,70 +1,124 @@
-export const content = {
-  en: {
-    nav: ['Services','Solutions','Projects','Training','About','Contact'],
-    heroKicker: 'AI-powered • Cloud-ready • Enterprise-grade',
-    heroTitle: 'Engineering the Future with Intelligent Technology.',
-    heroText: 'Novaris Technology designs, develops, and deploys secure enterprise software, cloud infrastructure, AI automation, and digital platforms for modern organizations.',
-    primary: 'Explore Services', secondary: 'View Showcase',
-    stats: [['120+','Solution Blueprints'],['30+','Technology Tracks'],['99.9%','Reliability Mindset'],['24/7','Support Model']],
-    aboutTitle: 'A modern technology partner for ambitious organizations.',
-    aboutText: 'Novaris Technology combines software engineering, cloud architecture, AI automation, cybersecurity, and professional training into one integrated technology practice. Our focus is building systems that look premium, scale securely, and solve real operational problems.',
-    servicesTitle: 'Intelligent Services for Modern Business.',
-    services: [
-      ['AI & Automation','AI assistants, workflow automation, intelligent search, document processing, and decision-support systems.'],
-      ['Enterprise Software','ERP, CRM, dashboards, portals, internal platforms, APIs, and custom business applications.'],
-      ['Cloud Engineering','Architecture, migration, monitoring, backup, DevOps, CI/CD, and scalable infrastructure.'],
-      ['Cybersecurity','Secure design, access control, hardening, monitoring, identity, policies, and risk reduction.'],
-      ['Web & Mobile Apps','High-performance websites, SaaS products, mobile apps, admin panels, and customer portals.'],
-      ['Professional Training','Programming, cloud, DevOps, cybersecurity, AI, data, and career-focused technical programs.']
-    ],
-    projectsTitle: 'Showcase Projects & Solution Concepts.',
-    projects: [
-      ['NovaCloud Operations Platform','A cloud operations dashboard for monitoring infrastructure, deployments, uptime, costs, and incidents across hybrid environments.','Next.js • Node.js • PostgreSQL • Docker'],
-      ['AI Customer Support Hub','An AI-powered support platform with knowledge-base search, ticket triage, multilingual chat, and analytics.','Python • OpenAI APIs • Redis • Vector Search'],
-      ['Enterprise ERP Command Center','A unified ERP concept covering finance, HR, inventory, procurement, workflows, approvals, and executive analytics.','React • .NET • SQL Server • Azure'],
-      ['Healthcare Management Suite','A digital healthcare platform for appointments, patient records, departments, reporting, and operational visibility.','Next.js • PostgreSQL • Secure APIs'],
-      ['Smart Logistics Intelligence','A logistics dashboard for shipment tracking, fleet activity, delivery performance, warehouse insights, and alerts.','Node.js • Maps • Analytics • IoT'],
-      ['Learning Management Platform','A training portal for courses, instructors, assessments, certificates, student progress, and blended learning.','Next.js • LMS • Payments • Reports']
-    ],
-    trainingTitle: 'Training Programs Built for Real Careers.',
-    courses: ['Full-Stack Web Development','Python Programming','AI Engineering & Prompt Systems','Cloud Computing Foundations','DevOps with Docker & Kubernetes','Cybersecurity Essentials','Flutter Mobile Apps','Data Analysis with SQL & Power BI'],
-    solutionsTitle: 'Industries We Build For.',
-    solutions: ['Healthcare','Education','Government','Banking & Finance','Retail & E-Commerce','Logistics','Manufacturing','Startups'],
-    contactTitle: 'Ready to build something extraordinary?',
-    contactText: 'Tell us about your project, platform, training program, or digital transformation need. Contact details will be connected after the domain is ready.'
+export const brand = {
+  name: 'Novaris Technology',
+  tagline: 'AI, Cloud & Enterprise Software',
+  email: 'contact@novaris.technology',
+  phone: '+000 000 000 000',
+  location: 'Global Remote Delivery'
+}
+
+export const stats = [
+  ['24/7', 'Monitoring-ready solutions'],
+  ['12+', 'Technology domains'],
+  ['40+', 'Solution blueprints'],
+  ['99.9%', 'Architecture uptime target']
+]
+
+export const services = [
+  {
+    title: 'Enterprise Software Development',
+    desc: 'Custom ERP, CRM, workflow automation, portals, dashboards and scalable business platforms designed for real operational needs.',
+    icon: '▣'
   },
-  ar: {
-    nav: ['الخدمات','الحلول','المشاريع','التدريب','من نحن','تواصل'],
-    heroKicker: 'ذكاء اصطناعي • سحابة • حلول مؤسسية',
-    heroTitle: 'نبني مستقبل الأعمال بتقنية ذكية.',
-    heroText: 'تطوّر Novaris Technology حلول برمجية مؤسسية، بنية تحتية سحابية، أتمتة بالذكاء الاصطناعي، ومنصات رقمية آمنة للمنظمات الحديثة.',
-    primary: 'استكشف الخدمات', secondary: 'شاهد الأعمال',
-    stats: [['120+','نماذج حلول'],['30+','مسار تقني'],['99.9%','فكر اعتمادية'],['24/7','نموذج دعم']],
-    aboutTitle: 'شريك تقني حديث للمنظمات الطموحة.',
-    aboutText: 'نجمع بين هندسة البرمجيات، الحوسبة السحابية، أتمتة الذكاء الاصطناعي، الأمن السيبراني، والتدريب المهني لتقديم حلول عملية قابلة للتوسع وتخدم احتياجات الأعمال الحقيقية.',
-    servicesTitle: 'خدمات ذكية للأعمال الحديثة.',
-    services: [
-      ['الذكاء الاصطناعي والأتمتة','مساعدات ذكية، أتمتة عمليات، بحث معرفي، معالجة مستندات، وأنظمة دعم القرار.'],
-      ['البرمجيات المؤسسية','أنظمة ERP وCRM ولوحات تحكم وبوابات داخلية وواجهات API وتطبيقات مخصصة.'],
-      ['هندسة السحابة','تصميم بنية، ترحيل، مراقبة، نسخ احتياطي، DevOps، وبيئات قابلة للتوسع.'],
-      ['الأمن السيبراني','تصميم آمن، صلاحيات، تقوية أنظمة، مراقبة، هوية رقمية، وسياسات تقليل المخاطر.'],
-      ['تطبيقات الويب والموبايل','مواقع عالية الأداء، منتجات SaaS، تطبيقات موبايل، لوحات إدارة وبوابات عملاء.'],
-      ['التدريب المهني','برمجة، سحابة، DevOps، أمن سيبراني، ذكاء اصطناعي، بيانات، ومسارات مهنية.']
-    ],
-    projectsTitle: 'مشاريع استعراضية وحلول نموذجية.',
-    projects: [
-      ['NovaCloud Operations Platform','لوحة عمليات سحابية لمراقبة البنية، النشر، التوفر، التكاليف والحوادث عبر بيئات هجينة.','Next.js • Node.js • PostgreSQL • Docker'],
-      ['AI Customer Support Hub','منصة دعم ذكية للبحث المعرفي، فرز التذاكر، محادثة متعددة اللغات وتحليلات.','Python • OpenAI APIs • Redis • Vector Search'],
-      ['Enterprise ERP Command Center','تصور لنظام ERP موحد يغطي المالية والموارد والمخزون والمشتريات والموافقات والتحليلات.','React • .NET • SQL Server • Azure'],
-      ['Healthcare Management Suite','منصة صحية رقمية للمواعيد، ملفات المرضى، الأقسام، التقارير والرؤية التشغيلية.','Next.js • PostgreSQL • Secure APIs'],
-      ['Smart Logistics Intelligence','لوحة لوجستية لتتبع الشحنات والأسطول والأداء والمستودعات والتنبيهات.','Node.js • Maps • Analytics • IoT'],
-      ['Learning Management Platform','بوابة تدريب للكورسات والمدربين والاختبارات والشهادات وتتبع تقدم الطلاب.','Next.js • LMS • Payments • Reports']
-    ],
-    trainingTitle: 'برامج تدريب لمسارات مهنية حقيقية.',
-    courses: ['تطوير ويب Full-Stack','برمجة Python','هندسة الذكاء الاصطناعي','أساسيات الحوسبة السحابية','DevOps وDocker وKubernetes','أساسيات الأمن السيبراني','تطبيقات Flutter','تحليل البيانات SQL وPower BI'],
-    solutionsTitle: 'قطاعات نخدمها.',
-    solutions: ['الصحة','التعليم','الحكومة','البنوك والتمويل','التجارة الإلكترونية','اللوجستيات','التصنيع','الشركات الناشئة'],
-    contactTitle: 'جاهز نبني شيئًا استثنائيًا؟',
-    contactText: 'أخبرنا عن مشروعك أو منصتك أو برنامجك التدريبي. سيتم ربط بيانات التواصل بعد تجهيز الدومين.'
+  {
+    title: 'AI & Automation Solutions',
+    desc: 'AI assistants, document intelligence, customer support automation, data extraction, copilots and workflow agents powered by modern LLMs.',
+    icon: '✦'
+  },
+  {
+    title: 'Cloud Infrastructure',
+    desc: 'Secure cloud architecture, migration, monitoring, backup, disaster recovery and cost-aware infrastructure across major cloud providers.',
+    icon: '☁'
+  },
+  {
+    title: 'Web & Mobile Applications',
+    desc: 'Premium websites, SaaS platforms, admin panels, mobile applications and responsive interfaces built for speed and usability.',
+    icon: '◈'
+  },
+  {
+    title: 'DevOps & Platform Engineering',
+    desc: 'CI/CD pipelines, Docker, Kubernetes, Linux servers, automation scripts, observability and production deployment workflows.',
+    icon: '⚙'
+  },
+  {
+    title: 'Cybersecurity & Reliability',
+    desc: 'Security reviews, access control, hardening, monitoring, incident readiness and secure-by-design engineering practices.',
+    icon: '◆'
   }
-};
+]
+
+export const projects = [
+  {
+    slug: 'enterprise-erp-platform',
+    title: 'Enterprise ERP Platform',
+    type: 'Enterprise Software',
+    desc: 'A modular enterprise resource planning platform for finance, procurement, inventory, HR, approvals and executive analytics.',
+    tech: ['Next.js', '.NET', 'PostgreSQL', 'Azure', 'Power BI'],
+    outcome: 'Unified operations, automated approvals and real-time leadership dashboards.',
+    gradient: 'from-blue to-purple'
+  },
+  {
+    slug: 'ai-customer-support-platform',
+    title: 'AI Customer Support Platform',
+    type: 'AI Automation',
+    desc: 'A multilingual AI support layer with knowledge-base search, ticket triage, escalation rules and conversation analytics.',
+    tech: ['Python', 'OpenAI APIs', 'Redis', 'Node.js', 'Vector DB'],
+    outcome: 'Faster response handling, reduced repetitive tickets and consistent support quality.',
+    gradient: 'from-purple to-cyan'
+  },
+  {
+    slug: 'hospital-information-system',
+    title: 'Hospital Information System',
+    type: 'Healthcare Technology',
+    desc: 'A healthcare operations platform for patient registration, appointments, medical records, billing and staff coordination.',
+    tech: ['React', 'Node.js', 'FHIR', 'PostgreSQL', 'Docker'],
+    outcome: 'Streamlined patient journeys and better operational visibility.',
+    gradient: 'from-cyan to-blue'
+  },
+  {
+    slug: 'smart-logistics-dashboard',
+    title: 'Smart Logistics Dashboard',
+    type: 'Data & Operations',
+    desc: 'A logistics intelligence dashboard for shipment tracking, fleet monitoring, route performance and warehouse visibility.',
+    tech: ['Next.js', 'Map APIs', 'Kafka', 'MongoDB', 'AWS'],
+    outcome: 'Real-time logistics visibility and data-informed dispatch decisions.',
+    gradient: 'from-blue to-cyan'
+  },
+  {
+    slug: 'cloud-migration-suite',
+    title: 'Cloud Migration Suite',
+    type: 'Cloud Infrastructure',
+    desc: 'A complete migration framework for moving legacy workloads into secure cloud environments with observability and DR planning.',
+    tech: ['Azure', 'AWS', 'Terraform', 'Docker', 'Grafana'],
+    outcome: 'Reliable infrastructure modernization with scalable deployment patterns.',
+    gradient: 'from-purple to-blue'
+  },
+  {
+    slug: 'learning-management-system',
+    title: 'Learning Management System',
+    type: 'Education Technology',
+    desc: 'A modern academy platform for courses, live sessions, assessments, certificates, student dashboards and instructor tools.',
+    tech: ['Next.js', 'Node.js', 'PostgreSQL', 'Stripe', 'Zoom APIs'],
+    outcome: 'A complete digital learning experience for technical training programs.',
+    gradient: 'from-cyan to-purple'
+  }
+]
+
+export const courses = [
+  ['Full Stack Development', 'HTML, CSS, JavaScript, React, Next.js, APIs, databases and deployment.'],
+  ['Python & AI Engineering', 'Python fundamentals, automation, data workflows, AI agents and LLM integrations.'],
+  ['Cloud Computing', 'Azure, AWS, Linux servers, networking, storage, security and cloud architecture.'],
+  ['DevOps Engineering', 'Git, Docker, CI/CD, Kubernetes, monitoring, automation and production workflows.'],
+  ['Cybersecurity Foundations', 'Networks, secure systems, identity, hardening, monitoring and incident readiness.'],
+  ['Mobile App Development', 'Flutter and React Native foundations for modern Android and iOS applications.']
+]
+
+export const solutions = [
+  'Healthcare systems', 'Education platforms', 'Government portals', 'Banking dashboards', 'Retail & e-commerce', 'Logistics operations', 'Manufacturing workflows', 'AI business automation'
+]
+
+export const faqs = [
+  ['Do you build custom software?', 'Yes. Novaris focuses on tailored business systems, SaaS platforms, dashboards, portals and automation workflows.'],
+  ['Do you provide cloud services?', 'Yes. We design cloud-ready infrastructure, migration strategies, deployment pipelines, monitoring and backup plans.'],
+  ['Do you offer training?', 'Yes. The academy section is designed for programming, AI, cloud, DevOps and cybersecurity tracks.'],
+  ['Are the portfolio items real client claims?', 'They are presented as solution showcases and capability case studies unless a verified client project is explicitly added later.']
+]

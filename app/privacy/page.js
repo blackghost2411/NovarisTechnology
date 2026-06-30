@@ -1,0 +1,3 @@
+import { PageShell, Hero, Card } from '../../components/Frame'
+export const metadata = { title: 'Privacy Policy | Novaris Technology' }
+export default function Privacy(){return <PageShell><Hero kicker="Legal" title="Privacy Policy" subtitle="A clear privacy statement for visitors, leads and future customers."/><section className="section"><Card><p>Novaris Technology collects only the information needed to respond to inquiries, provide services and improve communication. Contact form data may include name, email, organization and project details. We do not sell personal information. Official legal text can be updated once the company domain, jurisdiction and formal policies are finalized.</p></Card></section></PageShell>}

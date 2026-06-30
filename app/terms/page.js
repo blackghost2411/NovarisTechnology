@@ -1,0 +1,3 @@
+import { PageShell, Hero, Card } from '../../components/Frame'
+export const metadata = { title: 'Terms | Novaris Technology' }
+export default function Terms(){return <PageShell><Hero kicker="Legal" title="Terms of Service" subtitle="General terms for using the Novaris Technology website."/><section className="section"><Card><p>This website presents Novaris Technology services, training tracks and solution showcases. Information is provided for general business communication and may be updated over time. Final project scopes, timelines, pricing and responsibilities are defined only through written agreements.</p></Card></section></PageShell>}
