@@ -1,0 +1,2 @@
+const {Header,Footer,Projects}=require('../../components/Shell');
+export default function ProjectsPage(){return <><Header/><section className="container page-hero"><span className="pill">Portfolio</span><h1>Showcase projects with real business logic.</h1><p className="lead">These showcase case studies demonstrate the type of enterprise platforms, AI systems and cloud solutions Novaris can design and deliver.</p></section><Projects/><Footer/></>}
