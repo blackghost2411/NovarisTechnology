@@ -1,3 +1,3 @@
-import './globals.css'
-export const metadata={title:'Novaris Technology | AI, Cloud & Enterprise Software',description:'Premium bilingual technology company website for Novaris Technology.'}
-export default function RootLayout({children}){return <html lang="en"><body><div className="aurora"/><div className="grid"/>{children}</body></html>}
+import './globals.css';
+export const metadata = { title: 'Novaris Technology | AI, Cloud & Enterprise Software', description: 'Enterprise software, AI automation, cloud infrastructure and professional technology training.' };
+export default function RootLayout({ children }) { return <html lang="en"><body>{children}</body></html>; }
