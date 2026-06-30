@@ -1,10 +1,6 @@
-# Novaris Technology Website
+# Novaris Technology Premium Website
 
-Professional company website built with Next.js and Tailwind CSS.
-
-## Run locally
-npm install
-npm run dev
+Premium Next.js website for Novaris Technology: enterprise software, IT, AI, cloud, cybersecurity, DevOps, and consulting.
 
 ## Deploy
-Import this repository into Vercel and deploy.
+Upload/commit all files to GitHub, then import the repository into Vercel.
