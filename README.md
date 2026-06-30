@@ -1,5 +1,3 @@
-# Novaris Technology — Stripe-Level Premium
+# Novaris Technology Stripe-Level Master
 
-Next.js website with cinematic dark UI, aurora mesh gradients, glassmorphism, glowing cards and enterprise sections.
-
-Upload to GitHub, deploy with Vercel.
+Stable Next.js 14 JavaScript app. No Tailwind. No TypeScript. Premium Stripe-inspired UI.

@@ -1,16 +1,2 @@
 import Link from 'next/link';
-
-export function Footer(){
-  return <footer className="footer">
-    <div className="footer-grid">
-      <div>
-        <div className="footer-brand"><span className="brand-mark"><span>N</span></span><b>Novaris Technology</b></div>
-        <p>Enterprise software, AI automation and cloud infrastructure engineered for organizations that expect reliability, speed and executive-grade delivery.</p>
-      </div>
-      <div><h4>Company</h4><Link href="/about">About</Link><Link href="/projects">Projects</Link><Link href="/contact">Contact</Link></div>
-      <div><h4>Capabilities</h4><Link href="/services">Services</Link><Link href="/solutions">Solutions</Link><Link href="/privacy">Privacy</Link></div>
-      <div><h4>Legal</h4><Link href="/terms">Terms</Link><Link href="/acceptable-use">Acceptable Use</Link></div>
-    </div>
-    <div className="footer-bottom"><span>© 2026 Novaris Technology. All rights reserved.</span><span>Built for secure digital transformation.</span></div>
-  </footer>
-}
+export default function Footer(){return <footer className="footer"><div className="footer-glow"/><div className="footer-grid"><div><div className="brand footer-brand"><span className="brand-mark">N</span><span><strong>NOVARIS</strong><small>TECHNOLOGY</small></span></div><p>Enterprise software, AI automation, cloud platforms and secure digital products for ambitious businesses.</p></div><div><h4>Company</h4><Link href="/about">About</Link><Link href="/projects">Projects</Link><Link href="/contact">Contact</Link></div><div><h4>Solutions</h4><Link href="/services">AI Automation</Link><Link href="/solutions">Cloud Systems</Link><Link href="/services">DevOps</Link></div><div><h4>Connect</h4><a href="mailto:hello@novaris.technology">hello@novaris.technology</a><span>Global Delivery</span><span>24/7 Support</span></div></div><div className="footer-bottom"><span>© 2026 Novaris Technology.</span><span>Privacy · Terms · Security</span></div></footer>}
