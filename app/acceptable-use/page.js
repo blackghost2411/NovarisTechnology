@@ -1,3 +1,0 @@
-import { PageShell, Hero, Card } from '../../components/Frame'
-export const metadata = { title: 'Acceptable Use | Novaris Technology' }
-export default function Acceptable(){return <PageShell><Hero kicker="Legal" title="Acceptable Use" subtitle="Responsible use principles for future digital services and platforms."/><section className="section"><Card><p>Novaris Technology services and platforms must not be used for illegal activities, abuse, spam, malware, unauthorized access, fraud, data theft or activities that harm users, systems or networks. Specific acceptable use terms can be expanded when products or hosted services are launched.</p></Card></section></PageShell>}
